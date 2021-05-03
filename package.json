@@ -1,0 +1,23 @@
+{
+  "name": "web_app_dashboard_v3.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airoble-1/web_app_dashboard_v3.2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airoble-1/web_app_dashboard_v3.2/issues"
+  },
+  "homepage": "https://github.com/airoble-1/web_app_dashboard_v3.2#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

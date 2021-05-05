@@ -337,7 +337,7 @@ section {
 .section-heading {
   margin-left: 0.8rem;
   margin-bottom: 1.7rem;
-  font-weight: 550;
+  font-weight: 600;
   font-size: 0.85rem; }
 
 /* ============================================= */
@@ -434,7 +434,7 @@ section {
 .daily h3 {
   margin-left: 0.8rem;
   margin-bottom: 1.5rem;
-  font-weight: 550;
+  font-weight: 600;
   font-size: 0.85rem; }
 
 /* ============================================= */
@@ -443,7 +443,7 @@ section {
 .users h3 {
   margin-left: 0.8rem;
   margin-bottom: 1.7rem;
-  font-weight: 550;
+  font-weight: 600;
   font-size: 0.85rem; }
 
 /* ============================================= */
@@ -452,7 +452,7 @@ section {
 .social-stats h3 {
   margin-left: 0.8rem;
   margin-bottom: 1.7rem;
-  font-weight: 550;
+  font-weight: 600;
   font-size: 0.85rem; }
 
 .social-container {
@@ -577,7 +577,7 @@ form {
 .traffic-header h3 {
   margin-left: 0.8rem;
   margin-bottom: 0.25rem;
-  font-weight: 550;
+  font-weight: 600;
   font-size: 0.85rem; }
 
 .traffic-nav {
@@ -794,7 +794,7 @@ form {
       margin-bottom: 0.75rem;
       font-size: 1.1rem; }
   .social-name {
-    font-weight: 550; }
+    font-weight: 600; }
   .social-numbers {
     font-size: 2.5rem; }
   .social-container-flex {

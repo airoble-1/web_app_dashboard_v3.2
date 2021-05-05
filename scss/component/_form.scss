@@ -1,0 +1,40 @@
+#search {
+  width: 100%;
+  height: 3rem;
+  background-color: #eeeeee;
+  border: 2px solid #e0e0e0;
+}
+
+#userField,
+#messageField {
+  background-color: #eee;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #e0e0e0;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+#userField {
+  height: 2.5rem;
+}
+
+#messageField {
+  height: 5.5rem;
+}
+
+.selection-timezone {
+  width: 90%;
+  margin: 0 auto;
+}
+.selection-timezone select {
+  width: 100%;
+  height: 3rem;
+  background-color: #eee;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #e0e0e0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: darkgrey;
+}

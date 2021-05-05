@@ -1,0 +1,57 @@
+/* ============================================= */
+/*            Header Images Styles               */
+/* ============================================= */
+
+#container-bell {
+  width: 1.3rem;
+  position: relative;
+  margin-right: 1rem;
+}
+.bell-icon {
+  fill: #fff;
+}
+
+#notification {
+  position: absolute;
+  border-radius: 50%;
+  background-color: aquamarine;
+  width: 0.4rem;
+  height: 0.4rem;
+  top: -0.6rem;
+  right: -0.1rem;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 3.2rem;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.pic-container {
+  border-left: 1px solid #9b9b9b;
+}
+
+/* ============================================= */
+/*            Navigation Images Styles           */
+/* ============================================= */
+
+.nav-icon {
+  width: 2.5rem;
+}
+
+/* ============================================= */
+/*        Social Stats Images Styles             */
+/* ============================================= */
+
+.social-image svg {
+  width: 2rem;
+}
+
+/* ============================================= */
+/*        New Members Images Styles              */
+/* ============================================= */
+.members-pic {
+  border-radius: 50%;
+  width: 3.7rem;
+}

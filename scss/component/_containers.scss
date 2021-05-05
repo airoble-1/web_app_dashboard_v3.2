@@ -1,0 +1,275 @@
+#main > section:not(:last-of-type) {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 0.75rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+.section-heading {
+  margin-left: 0.8rem;
+  margin-bottom: 1.7rem;
+  font-weight: 550;
+  font-size: 0.85rem;
+}
+
+/* ============================================= */
+/*            Header Container Styles            */
+/* ============================================= */
+
+#header {
+  background-color: #7477bf;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.5rem;
+  color: #fff;
+  position: relative;
+  align-items: center;
+}
+
+#header h1 {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+#header h1 span {
+  font-weight: 100;
+  color: #eee;
+}
+
+.trademark {
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0.1rem;
+}
+
+#header p {
+  font-size: 0.7rem;
+  width: 5rem;
+  color: #eee;
+}
+
+/* ============================================= */
+/*        Dashboard Container styles             */
+/* ============================================= */
+
+.main-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.headline {
+  width: 25%;
+  margin: 0 0.75rem;
+}
+.main-header-search {
+  width: 75%;
+}
+
+/* ============================================= */
+/*        Alert Container Styles                 */
+/* ============================================= */
+
+.alert {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.alert-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #7477bf;
+  width: 90%;
+  height: 2rem;
+
+  border-radius: 5px;
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+/* ============================================= */
+/*            Chart Widget styles                */
+/* ============================================= */
+
+.widget-container-full,
+.widget-container-half {
+  position: relative;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+/* ============================================= */
+/*            Traffic: Line graph                */
+/* ============================================= */
+
+/* ============================================= */
+/*            Traffic: Bar graph                 */
+/* ============================================= */
+
+.daily h3 {
+  margin-left: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 550;
+  font-size: 0.85rem;
+}
+
+/* ============================================= */
+/*            Traffic: Doughnut graph            */
+/* ============================================= */
+
+.users h3 {
+  margin-left: 0.8rem;
+  margin-bottom: 1.7rem;
+  font-weight: 550;
+  font-size: 0.85rem;
+}
+
+/* ============================================= */
+/*            Social Stats                       */
+/* ============================================= */
+
+.social-stats h3 {
+  margin-left: 0.8rem;
+  margin-bottom: 1.7rem;
+  font-weight: 550;
+  font-size: 0.85rem;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 5rem;
+  margin: 0 auto;
+  background-color: #eee;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #e0e0e0;
+}
+
+.social-image {
+  display: flex;
+  justify-content: center;
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+  background-color: $primary-color;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.social-name {
+  color: $primary-color;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.social-text {
+  color: #6b6b6b;
+  font-size: 2rem;
+}
+
+/* ============================================= */
+/*            New Members                        */
+/* ============================================= */
+
+.members > div:not(:last-of-type) {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 0.75rem;
+}
+.members-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.email {
+  color: #7477bf;
+}
+
+.email,
+.date-join,
+.member-name {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/* ============================================= */
+/*        Activity Container Styles              */
+/* ============================================= */
+
+.activity-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0 1rem;
+}
+
+.activity-details {
+  display: none;
+}
+
+.post-topic {
+  font-weight: 600;
+}
+
+.activity > div:not(:last-of-type) {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 0.75rem;
+}
+
+/* ============================================= */
+/*                Message                        */
+/* ============================================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ============================================= */
+/*                Setting                        */
+/* ============================================= */
+.toggle-switch-container {
+  width: 90%;
+  margin: 1rem auto;
+  font-size: 1rem;
+}
+
+.switch-light {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1rem auto;
+  font-size: 1rem;
+}

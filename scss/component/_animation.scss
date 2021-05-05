@@ -1,0 +1,12 @@
+@keyframes ringing {
+  25% {
+    transform: scale(1.2) rotate(-10deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(10deg);
+  }
+}
+
+#container-bell:hover {
+  animation: ringing 2s ease-out;
+}

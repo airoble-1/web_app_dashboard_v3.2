@@ -524,8 +524,7 @@ section {
   text-align: center;
   margin: 1rem auto;
   font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0 1rem; }
+  line-height: 1rem; }
 
 .post-topic {
   font-weight: 600; }
@@ -615,7 +614,7 @@ form {
   display: grid; }
 
 .btn-primary {
-  height: 2.5rem;
+  height: 3rem;
   background-color: #7477bf;
   border-radius: 5px;
   border: 2px solid #e0e0e0;
@@ -715,6 +714,15 @@ form {
 .members-pic {
   border-radius: 50%;
   width: 3.7rem; }
+
+@keyframes ringing {
+  25% {
+    transform: scale(1.2) rotate(-10deg); }
+  75% {
+    transform: scale(1.2) rotate(10deg); } }
+
+#container-bell:hover {
+  animation: ringing 2s ease-out; }
 
 @media screen and (min-width: 768px) {
   .grid-container {
@@ -822,8 +830,7 @@ form {
     margin-left: 1.5rem; }
   .activity-container {
     flex-direction: row;
-    justify-content: space-between;
-    width: 95%; }
+    justify-content: space-between; }
   .activity-info {
     width: 10rem;
     display: flex;
@@ -840,3 +847,43 @@ form {
   .settings h3 {
     font-size: 1.1rem;
     margin-left: 1.5rem; } }
+
+@media screen and (min-width: 1024px) {
+  .members,
+  .message {
+    grid-column: 1 / span 1; }
+  .activity,
+  .settings {
+    grid-column: 2 / span 1; }
+  .activity {
+    border-left: 1px solid #9b9b9b; }
+  .activity-container {
+    margin-left: 0.75rem; }
+  .activity-info p {
+    width: 21rem; }
+  .social-stats {
+    margin-bottom: 0; }
+  .members {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0; }
+    .members h3 {
+      margin-top: 0.75rem; }
+  .activity {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0; }
+    .activity h3 {
+      margin-top: 0.75rem; }
+  .message {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0; }
+    .message h3 {
+      margin-top: 0.75rem; }
+  .settings {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0; }
+    .settings h3 {
+      margin-top: 0.75rem; }
+  #userField {
+    height: 3rem; }
+  #messageField {
+    height: 6.5rem; } }

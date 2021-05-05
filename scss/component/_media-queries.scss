@@ -158,7 +158,6 @@
   .activity-container {
     flex-direction: row;
     justify-content: space-between;
-    width: 95%;
   }
   .activity-info {
     width: 10rem;
@@ -183,5 +182,69 @@
   .settings h3 {
     font-size: 1.1rem;
     margin-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  // grid
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
+  // activity
+  .activity {
+    border-left: 1px solid #9b9b9b;
+  }
+  .activity-container {
+    margin-left: 0.75rem;
+  }
+  .activity-info p {
+    width: 21rem;
+  }
+  // social stats
+  .social-stats {
+    margin-bottom: 0;
+  }
+  // members
+  .members {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0;
+    & h3 {
+      margin-top: 0.75rem;
+    }
+  }
+  // activity
+  .activity {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0;
+    & h3 {
+      margin-top: 0.75rem;
+    }
+  }
+  // message
+  .message {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0;
+    & h3 {
+      margin-top: 0.75rem;
+    }
+  }
+  // settings
+  .settings {
+    border-right: 1px solid #9b9b9b;
+    margin-bottom: 0;
+    & h3 {
+      margin-top: 0.75rem;
+    }
+  }
+  #userField {
+    height: 3rem;
+  }
+
+  #messageField {
+    height: 6.5rem;
   }
 }

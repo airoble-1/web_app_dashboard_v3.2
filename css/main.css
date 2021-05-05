@@ -344,6 +344,7 @@ section {
 /*            Header Container Styles            */
 /* ============================================= */
 #header {
+  width: 100%;
   background-color: #7477bf;
   display: flex;
   justify-content: space-between;
@@ -404,7 +405,7 @@ section {
 
 .alert-banner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   background-color: #7477bf;
@@ -412,7 +413,8 @@ section {
   height: 2rem;
   border-radius: 5px;
   color: #eee;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  padding: 0 1rem; }
 
 /* ============================================= */
 /*            Chart Widget styles                */
@@ -510,6 +512,10 @@ section {
 /* ============================================= */
 /*        Activity Container Styles              */
 /* ============================================= */
+.activity > div:not(:last-of-type) {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 0.75rem; }
+
 .activity-container {
   display: flex;
   width: 90%;
@@ -521,15 +527,11 @@ section {
   line-height: 1rem;
   padding: 0 1rem; }
 
-.activity-details {
-  display: none; }
-
 .post-topic {
   font-weight: 600; }
 
-.activity > div:not(:last-of-type) {
-  border-bottom: 1px solid #9b9b9b;
-  padding-bottom: 0.75rem; }
+.activity-details {
+  display: none; }
 
 /* ============================================= */
 /*                Message                        */
@@ -537,7 +539,7 @@ section {
 form {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
   margin: 0 auto; }
 
 /* ============================================= */
@@ -557,7 +559,7 @@ form {
 .settings-btn {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   margin: 1rem auto;
   font-size: 1rem; }
 
@@ -593,8 +595,8 @@ form {
 .active {
   color: #eee;
   background-color: #78cf82;
-  border-radius: 10px;
-  padding: 0.3rem 0.8rem; }
+  border-radius: 50px;
+  padding: 0.5em 0.8em; }
 
 .grid-container {
   display: grid;
@@ -652,7 +654,7 @@ form {
   height: 5.5rem; }
 
 .selection-timezone {
-  width: 90%;
+  width: 95%;
   margin: 0 auto; }
 
 .selection-timezone select {
@@ -723,17 +725,118 @@ form {
   .main-header,
   .alert,
   .traffic,
-  .social-stats {
-    grid-column: 1 / span 2; }
-  .daily,
+  .social-stats,
   .members,
-  .message {
-    grid-column: 1 / span 1; }
-  .users,
+  .message,
   .activity,
   .settings {
+    grid-column: 1 / span 2; }
+  .daily {
+    grid-column: 1 / span 1; }
+  .users {
     grid-column: 2 / span 1; }
   .widget-container-full {
     width: 90vw; }
   .widget-container-half {
-    width: 45vw; } }
+    width: 45vw; }
+  .user-info {
+    margin-right: 0.5rem; }
+  #nav {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start; }
+    #nav .nav-icon {
+      margin-top: 1rem; }
+  .main-header {
+    margin-left: 0.5rem;
+    font-size: 0.8rem; }
+  .main-header-search {
+    width: 120%; }
+  .alert-banner {
+    width: 95%;
+    height: 2.5rem; }
+  .traffic {
+    margin-bottom: 0; }
+  .traffic-header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0.5rem; }
+    .traffic-header h3 {
+      font-size: 1.1rem; }
+  .traffic-nav {
+    width: 50%;
+    justify-content: center; }
+  .traffic-nav-link {
+    font-size: 1rem;
+    margin-left: 1rem; }
+  .daily {
+    border-right: 1px solid #9b9b9b;
+    padding-right: 0.75rem; }
+    .daily h3 {
+      margin-top: 0.75rem;
+      font-size: 1.1rem; }
+  .users h3 {
+    margin-top: 0.75rem;
+    font-size: 1.1rem; }
+  .social-stats {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; }
+    .social-stats h3 {
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem; }
+  .social-name {
+    font-weight: 550; }
+  .social-numbers {
+    font-size: 2.5rem; }
+  .social-container-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; }
+  .social-container {
+    width: 32%;
+    height: 6.5rem; }
+  .members h3 {
+    font-size: 1.1rem;
+    margin-left: 1.5rem; }
+  .members-container {
+    flex-direction: row;
+    justify-content: space-between; }
+  .member-info {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: left; }
+  .members-text {
+    margin-left: 1rem; }
+  .member-name,
+  .email,
+  .date-join {
+    font-size: 1rem; }
+  .activity-details {
+    display: block;
+    font-size: 1.5rem;
+    color: #7477bf; }
+  .activity h3 {
+    font-size: 1.1rem;
+    margin-left: 1.5rem; }
+  .activity-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%; }
+  .activity-info {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    text-align: left; }
+  .activity-text {
+    margin-left: 1rem;
+    font-size: 1rem; }
+  .activity-text p {
+    width: 27rem; }
+  .message h3 {
+    font-size: 1.1rem;
+    margin-left: 1.5rem; }
+  .settings h3 {
+    font-size: 1.1rem;
+    margin-left: 1.5rem; } }

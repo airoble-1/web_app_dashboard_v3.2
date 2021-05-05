@@ -19,6 +19,7 @@ section {
 /* ============================================= */
 
 #header {
+  width: 100%;
   background-color: #7477bf;
   display: flex;
   justify-content: space-between;
@@ -88,16 +89,16 @@ section {
 }
 .alert-banner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   background-color: #7477bf;
   width: 90%;
   height: 2rem;
-
   border-radius: 5px;
   color: #eee;
   font-size: 0.9rem;
+  padding: 0 1rem;
 }
 
 /* ============================================= */
@@ -214,6 +215,11 @@ section {
 /*        Activity Container Styles              */
 /* ============================================= */
 
+.activity > div:not(:last-of-type) {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 0.75rem;
+}
+
 .activity-container {
   display: flex;
   width: 90%;
@@ -226,17 +232,12 @@ section {
   padding: 0 1rem;
 }
 
-.activity-details {
-  display: none;
-}
-
 .post-topic {
   font-weight: 600;
 }
 
-.activity > div:not(:last-of-type) {
-  border-bottom: 1px solid #9b9b9b;
-  padding-bottom: 0.75rem;
+.activity-details {
+  display: none;
 }
 
 /* ============================================= */
@@ -246,7 +247,7 @@ section {
 form {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -269,7 +270,7 @@ form {
 .settings-btn {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   margin: 1rem auto;
   font-size: 1rem;
 }

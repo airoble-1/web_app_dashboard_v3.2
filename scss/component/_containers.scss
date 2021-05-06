@@ -20,7 +20,7 @@ section {
 
 #header {
   width: 100%;
-  background-color: #7477bf;
+  background-color: $primary-color;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -262,8 +262,40 @@ form {
 .switch-light {
   display: flex;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
+}
+
+.switch-light strong {
+  flex-basis: 215px;
+}
+.switch-ios.switch-light > span {
+  width: 115px;
+  height: 40px;
+  border: 2px #e0e0e0 solid;
+}
+
+.switch-ios.switch-light input:checked ~ span {
+  border-color: #e0e0e0;
+  box-shadow: inset 0 0 0 30px $primary-color;
+}
+
+.switch-ios.switch-light > span span:first-of-type {
+  padding-left: 45%;
+}
+
+.switch-ios.switch-light > span span:last-of-type {
+  padding-right: 60%;
+}
+
+.switch-ios.switch-light > span span:first-of-type,
+.switch-ios.switch-light > span span:last-of-type {
+  line-height: 2.2;
+}
+
+.switch-ios.switch-light a {
+  height: 1.75rem;
+  width: 1.75rem;
+  margin-top: 0.2rem;
 }
 
 .settings-btn {

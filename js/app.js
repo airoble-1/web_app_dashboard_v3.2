@@ -1,6 +1,11 @@
 "use strict"
 
 // DOM selection
+
+const bellIcon = document.getElementById("container-bell")
+const notifcationsContainer = document.querySelector(".main-container")
+const notifications = document.querySelector(".notifications")
+const overlay = document.getElementById("overlay")
 const alertBanner = document.getElementById("alert")
 
 const trafficCanvas = document.getElementById("traffic-chart")
@@ -18,6 +23,30 @@ const email = document.getElementById("email-notification")
 const timezones = document.getElementById("timezone")
 const save = document.getElementById("save")
 const cancel = document.getElementById("cancel")
+
+// notifcations (using closable list items)
+bellIcon.addEventListener("click", (e) => {
+  notifications.style.display = "block"
+  overlay.style.display = "flex"
+})
+/*
+ * How To - Closable List Items
+ * This was removed from an example from W3Schools
+ * Found here: https://www.w3schools.com/howto/howto_js_close_list_items.asp
+ */
+/* Get all elements with class="close" */
+let closebtns = document.getElementsByClassName("close")
+/* Loop through the elements, and hide the parent, when clicked on */
+
+for (let i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function () {
+    this.parentElement.remove()
+    if (!notifications.firstElementChild) {
+      notifications.style.display = "none"
+      overlay.style.display = "none"
+    }
+  })
+}
 
 // alert banner
 alertBanner.innerHTML = `
@@ -164,7 +193,7 @@ for (let i = 0; i < membersCollection.length; i++) {
 
 /*
  * Autocomplete input field functionality with JS.
- * This was adapted from an example from W3Schools
+ * This was removed from an example from W3Schools
  * Found here: https://www.w3schools.com/howto/howto_js_autocomplete.asp
  
 */

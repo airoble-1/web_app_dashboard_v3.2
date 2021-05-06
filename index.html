@@ -301,8 +301,10 @@
       <!-- messaging widget-->
       <section class="message uppercase">
         <h3 class="section-heading">Message User</h3>
-        <form>
-          <input type="text" placeholder="Search for User" id="userField" />
+        <form autocomplete="off">
+          <div class="autocomplete">
+            <input type="text" placeholder="Search for User" id="userField" />
+          </div>
           <textarea placeholder="Message for User" id="messageField"></textarea>
           <button class="btn-primary uppercase" type="submit" id="sendBtn">
             Send
@@ -317,7 +319,7 @@
         <!-- customer CSS toggle code-->
         <div class="toggle-switch-container">
           <label class="switch-light switch-ios" onclick="">
-            <input type="checkbox" />
+            <input id="email-notification" type="checkbox" />
 
             <strong>Send Email Notifications</strong>
 
@@ -332,7 +334,7 @@
         <!-- customer CSS toggle code-->
         <div class="toggle-switch-container">
           <label class="switch-light switch-ios" onclick="">
-            <input type="checkbox" />
+            <input id="profile-visibility" type="checkbox" />
 
             <strong>Set Profile to Public</strong>
 
@@ -345,13 +347,13 @@
         </div>
 
         <div class="selection-timezone">
-          <select>
-            <option disabled selected>Select Timezone</option>
-            <option>Eastern</option>
-            <option>Central</option>
-            <option>Mountain</option>
-            <option>Pacific</option>
-            <option>Atlantic</option>
+          <select id="timezone">
+            <option value="" disabled selected>Select Timezone</option>
+            <option value="eastern">Eastern</option>
+            <option value="central">Central</option>
+            <option value="mountain">Mountain</option>
+            <option value="pacific">Pacific</option>
+            <option value="atlantic">Atlantic</option>
           </select>
         </div>
 

@@ -386,8 +386,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 10%;
-  max-height: 100px;
+  height: 5rem;
   text-align: center; }
 
 #overlay {
@@ -396,11 +395,12 @@ section {
   position: fixed;
   color: #ffffff;
   justify-content: flex-start;
-  top: 4rem;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 5px; }
+  border-radius: 5px;
+  height: 5rem; }
 
 .notification-overlay {
   background-color: #7477bf;

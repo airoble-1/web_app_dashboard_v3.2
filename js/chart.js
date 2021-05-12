@@ -20,27 +20,23 @@ document.getElementById("hourly").addEventListener("click", () => {
   trafficChart.config.data = trafficHourlyData
   trafficChart.config.options.scales.y.ticks.stepSize = 45
   trafficChart.update()
-  console.log(trafficChart)
 })
 // traffic chart updated with daily data
 document.getElementById("daily").addEventListener("click", () => {
   trafficChart.config.data = trafficDailyData
   trafficChart.config.options.scales.y.ticks.stepSize = 55
   trafficChart.update()
-  console.log(trafficChart)
 })
 // traffuc chart updated with weekly data
 document.getElementById("weekly").addEventListener("click", () => {
   trafficChart.config.data = trafficWeeklyData
   trafficChart.config.options.scales.y.ticks.stepSize = 500
   trafficChart.update()
-  console.log(trafficChart)
 })
 document.getElementById("montly").addEventListener("click", () => {
   trafficChart.config.data = trafficMontlyData
   trafficChart.config.options.scales.y.ticks.stepSize = 5000
   trafficChart.update()
-  console.log(trafficChart)
 })
 
 // line graph data
@@ -134,18 +130,8 @@ let trafficMontlyData = {
   datasets: [
     {
       data: [
-        10000,
-        22000,
-        49000,
-        68000,
-        87000,
-        77000,
-        15000,
-        56000,
-        39000,
-        54000,
-        28000,
-        64000,
+        10000, 22000, 49000, 68000, 87000, 77000, 15000, 56000, 39000, 54000,
+        28000, 64000,
       ],
       fill: true,
       tension: 0.4,

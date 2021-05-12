@@ -832,18 +832,24 @@ form {
   width: 3.7rem; }
 
 @keyframes ringing {
+  10% {
+    transform: scale(1.2) rotate(-20deg); }
   20% {
+    transform: scale(1.2) rotate(20deg); }
+  30% {
     transform: scale(1.2) rotate(-20deg); }
   40% {
     transform: scale(1.2) rotate(20deg); }
+  50% {
+    transform: scale(1.2) rotate(-20deg); }
   60% {
+    transform: scale(1.2) rotate(20deg); }
+  70% {
     transform: scale(1.2) rotate(-20deg); }
   80% {
-    transform: scale(1.2) rotate(-20deg); }
+    transform: scale(1.2) rotate(20deg); }
   90% {
-    transform: scale(1.2) rotate(0deg); }
-  100% {
-    transform: scale(1.2) rotate(0deg); } }
+    transform: scale(1.2) rotate(-20deg); } }
 
 #container-bell:hover {
   animation: ringing 2s ease-out forwards; }
@@ -880,7 +886,7 @@ form {
     #nav .nav-icon {
       margin-top: 1rem; }
   .main-header {
-    margin-left: 0.5rem;
+    padding-left: 0.5rem;
     font-size: 0.8rem; }
   .main-header-search {
     width: 120%; }
